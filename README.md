@@ -180,6 +180,6 @@ Para a implementação do slider superior foi utilizado: [**Swiper JS**](https:/
 
 ### Mobile
 
-<img src='./src/imagens/img-5.PNG' alt='home' width="500" /> 
-<img src='./src/imagens/img-6.PNG' alt='tv series' width="500" /> 
-<img src='./src/imagens/img-8.PNG' alt='favorites' width="500" />
+<img src='./src/imagens/img-5.PNG' alt='home' width="350" /> 
+<img src='./src/imagens/img-6.PNG' alt='tv series' width="350" /> 
+<img src='./src/imagens/img-7.PNG' alt='favorites' width="350" />
