@@ -34,7 +34,17 @@ const GlobalStyles = createGlobalStyle`
   font-family: inherit;
  }
 
+ .swiper-slide{
+    width:auto;
+}
 
+@media screen and (max-width: 1200px) {
+  
+  .swiper {
+    margin: 0 auto !important;
+    padding: 0 2rem; 
+  }
+}
 
 
 `;

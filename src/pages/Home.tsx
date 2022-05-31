@@ -5,16 +5,16 @@ import { useGlobalContext } from '../store/context';
 import Slider from '../components/slider/Slider';
 
 const Home = () => {
-  const {state} = useGlobalContext()
+  const { state } = useGlobalContext();
   return (
     <>
       <Slider />
-    <Container>
-      <H2>Trending</H2>
-    
-      <H2>Recommended for you</H2>
-      <List state={state} />
-    </Container>
+      <Container>
+        <H2>Trending</H2>
+
+        <H2>Recommended for you</H2>
+        <List state={state} />
+      </Container>
     </>
   );
 };

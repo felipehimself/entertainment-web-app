@@ -1,20 +1,15 @@
-import styled from 'styled-components';
 import ListCard from './ListCard';
 import IAppInterface from '../../interfaces/appInterfaces';
+import { Ul } from './styles';
 
 const List: React.FC<{ state: IAppInterface[] }> = ({ state }) => {
   return (
-    <Wrapper>
+    <Ul>
       {state.map((movie) => {
         return <ListCard {...movie} key={movie.name} />;
       })}
-    </Wrapper>
+    </Ul>
   );
 };
 
-const Wrapper = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 2.2rem;
-`;
 export default List;
