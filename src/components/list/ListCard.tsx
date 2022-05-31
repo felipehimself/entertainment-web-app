@@ -6,6 +6,8 @@ import playIcon from './../../assets/icons/icon-play.svg';
 import favIcon from './../../assets/icons/icon-bookmark.svg';
 
 import * as Style from './styles';
+import { useGlobalContext } from '../../store/context';
+import { IoBookmarkSharp } from 'react-icons/io5';
 
 const ListCard: React.FC<IAppInterface> = ({
   name,
@@ -15,7 +17,10 @@ const ListCard: React.FC<IAppInterface> = ({
   isFavorite,
   isTrending,
   img,
+  id,
 }) => {
+  const { dispatch } = useGlobalContext();
+
   return (
     <Style.Article>
       <Style.ImgContainer>
@@ -26,17 +31,25 @@ const ListCard: React.FC<IAppInterface> = ({
             Play
           </Style.BtnPlay>
         </Style.ContainerPlay>
-        <Style.BtnFavorite>
-          <Style.Icon src={favIcon} alt='play button' />
+        <Style.BtnFavorite
+          onClick={() =>
+            dispatch({ type: 'CHANGE_FAVORITE', payload: { id: id } })
+          }
+        >
+          {isFavorite ? (
+            <IoBookmarkSharp size={14} color='#fff' />
+          ) : (
+            <Style.Icon src={favIcon} alt='favorite icon' />
+          )}
         </Style.BtnFavorite>
       </Style.ImgContainer>
       <Style.ListCard>
         <Style.Li>{year}</Style.Li>
         <Style.Li>
           {category === 'movie' ? (
-            <Style.Icon src={movieIcon} alt='' />
+            <Style.Icon src={movieIcon} alt='movie icon' />
           ) : (
-            <Style.Icon src={tvIcon} alt='' />
+            <Style.Icon src={tvIcon} alt='tv series icon' />
           )}
           {category}
         </Style.Li>

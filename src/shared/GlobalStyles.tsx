@@ -28,6 +28,7 @@ const GlobalStyles = createGlobalStyle`
  body {
    background-color: ${STYLES.colors.colorBlueDark};
    color: #fff;
+   margin-bottom: 6rem;
  }
 
  input , button {

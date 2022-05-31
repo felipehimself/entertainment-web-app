@@ -2,13 +2,10 @@ import styled from 'styled-components';
 import STYLES from '../../constants/Styles';
 
 export const Ul = styled.ul`
-
-display: grid;
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 2.2rem;
-
-
-`
+`;
 export const Article = styled.article``;
 
 export const Img = styled.img`
@@ -43,6 +40,7 @@ export const ImgContainer = styled.div`
     height: 100%;
     inset: 0;
     background-image: none;
+    transition: all 0.3s ease;
   }
 
   &:hover::after {
@@ -80,7 +78,11 @@ export const BtnPlay = styled.button`
   cursor: pointer;
 `;
 
-export const Icon = styled.img``;
+export const Icon = styled.img`
+  
+  
+
+`;
 
 export const BtnFavorite = styled.button`
   position: absolute;

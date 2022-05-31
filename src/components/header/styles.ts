@@ -8,9 +8,10 @@ export const Header = styled.header`
   align-items: center;
   gap: 1.6rem;
   padding: 0 2rem;
+  
 
   @media screen and (max-width: 1200px) {
-    margin: 10rem auto 0 auto;
+    margin: 10rem auto 4rem auto;
   }
 `;
 

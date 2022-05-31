@@ -33,7 +33,9 @@ import unresolvedCases from './../assets/images/unresolved-cases.jpg';
 import vanLife from './../assets/images/van-life.jpg';
 import whisperingHill from './../assets/images/whispering-hill.jpg';
 
-const data = [
+import IAppInterface from '../interfaces/appInterfaces';
+
+const data: IAppInterface[] = [
   {
     name: '112',
     category: 'TV Series',
@@ -43,6 +45,7 @@ const data = [
     isTrending: false,
     img: oneOneTwo,
     imgLarge: undefined,
+    id: 1,
   },
   {
     name: '1998',
@@ -53,6 +56,7 @@ const data = [
     isTrending: true,
     img: oneNineNineEight,
     imgLarge: oneNineNineEightLarge,
+    id: 2,
   },
   {
     name: 'Asia in 24 Days',
@@ -63,6 +67,7 @@ const data = [
     isTrending: false,
     img: asiaIn24,
     imgLarge: undefined,
+    id: 3,
   },
   {
     name: 'Auto Sport',
@@ -73,6 +78,7 @@ const data = [
     isTrending: false,
     img: autoSport,
     imgLarge: undefined,
+    id: 4,
   },
   {
     name: 'Below Echo',
@@ -83,6 +89,7 @@ const data = [
     isTrending: false,
     img: belowEcho,
     imgLarge: undefined,
+    id: 5,
   },
   {
     name: 'Beyond Earth',
@@ -93,6 +100,7 @@ const data = [
     isTrending: true,
     img: beyond,
     imgLarge: beyondLarge,
+    id: 6,
   },
   {
     name: 'Bottom Gear',
@@ -103,6 +111,7 @@ const data = [
     isTrending: true,
     img: bottomGear,
     imgLarge: bottomGearLarge,
+    id: 7,
   },
   {
     name: 'Community of Ours',
@@ -113,6 +122,7 @@ const data = [
     isTrending: false,
     img: communityOfOurs,
     imgLarge: undefined,
+    id: 8,
   },
   {
     name: 'Dark Side of the Moon',
@@ -123,6 +133,7 @@ const data = [
     isTrending: true,
     img: darkSideOfTheMoon,
     imgLarge: darkSideOfTheMoonLarge,
+    id: 9,
   },
   {
     name: 'Darker',
@@ -133,6 +144,7 @@ const data = [
     isTrending: false,
     img: darker,
     imgLarge: undefined,
+    id: 10,
   },
   {
     name: 'Dogs',
@@ -143,6 +155,7 @@ const data = [
     isTrending: false,
     img: dogs,
     imgLarge: undefined,
+    id: 11,
   },
   {
     name: 'During the Hunt',
@@ -153,6 +166,7 @@ const data = [
     isTrending: false,
     img: duringTheHunt,
     imgLarge: undefined,
+    id: 12,
   },
   {
     name: 'Earth’s Untouched',
@@ -163,6 +177,7 @@ const data = [
     isTrending: false,
     img: earthsUntouched,
     imgLarge: undefined,
+    id: 13,
   },
   {
     name: 'Lone Heart',
@@ -173,6 +188,7 @@ const data = [
     isTrending: false,
     img: loneHeart,
     imgLarge: undefined,
+    id: 14,
   },
   {
     name: 'Mission: Saturn',
@@ -183,6 +199,7 @@ const data = [
     isTrending: false,
     img: missionSatrun,
     imgLarge: undefined,
+    id: 15,
   },
   {
     name: 'No Land Beyond',
@@ -193,6 +210,7 @@ const data = [
     isTrending: false,
     img: noLandBeyond,
     imgLarge: undefined,
+    id: 16,
   },
   {
     name: 'Off the Track',
@@ -203,6 +221,7 @@ const data = [
     isTrending: false,
     img: offTheTrack,
     imgLarge: undefined,
+    id: 17,
   },
   {
     name: 'Production Line',
@@ -213,6 +232,7 @@ const data = [
     isTrending: false,
     img: productionLine,
     imgLarge: undefined,
+    id: 18,
   },
   {
     name: 'Relentless',
@@ -223,6 +243,7 @@ const data = [
     isTrending: false,
     img: relentless,
     imgLarge: undefined,
+    id: 19,
   },
   {
     name: 'Same Answer II',
@@ -233,6 +254,7 @@ const data = [
     isTrending: false,
     img: sameAnswer,
     imgLarge: undefined,
+    id: 20,
   },
   {
     name: 'The Diary',
@@ -243,6 +265,7 @@ const data = [
     isTrending: false,
     img: theDiary,
     imgLarge: undefined,
+    id: 21,
   },
   {
     name: 'The Great Lands',
@@ -253,6 +276,7 @@ const data = [
     isTrending: false,
     img: theGreatLands,
     imgLarge: undefined,
+    id: 22,
   },
   {
     name: 'The Heiress',
@@ -263,6 +287,7 @@ const data = [
     isTrending: false,
     img: theHeiress,
     imgLarge: undefined,
+    id: 23,
   },
   {
     name: 'The Rockies',
@@ -273,6 +298,7 @@ const data = [
     isTrending: false,
     img: theRockies,
     imgLarge: undefined,
+    id: 24,
   },
   {
     name: 'The Tasty Tour',
@@ -283,6 +309,7 @@ const data = [
     isTrending: false,
     img: theTastyTour,
     imgLarge: undefined,
+    id: 25,
   },
   {
     name: 'Undiscovered Cities',
@@ -293,6 +320,7 @@ const data = [
     isTrending: true,
     img: undiscovered,
     imgLarge: undiscoveredLarge,
+    id: 26,
   },
   {
     name: 'Unresolved Cases',
@@ -303,6 +331,7 @@ const data = [
     isTrending: false,
     img: unresolvedCases,
     imgLarge: undefined,
+    id: 27,
   },
   {
     name: 'Van Life',
@@ -313,6 +342,7 @@ const data = [
     isTrending: false,
     img: vanLife,
     imgLarge: undefined,
+    id: 28,
   },
   {
     name: 'Whispering Hill',
@@ -323,9 +353,10 @@ const data = [
     isTrending: false,
     img: whisperingHill,
     imgLarge: undefined,
+    id: 29,
   },
 ];
 
-export default data
+export default data;
 
 // is vaforite no final, junto com id
