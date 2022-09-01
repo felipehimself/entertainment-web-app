@@ -8,14 +8,9 @@ const TvSeries = () => {
   const { state, setTerm, term } = useGlobalContext();
   const tvSeries = state.filter((item) => item.category === 'TV Series');
 
-  useEffect(() => {
-    setTerm('');
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
   return (
     <Container>
-    {term.length > 0 ? <H2>Results</H2> : <H2>TV Series</H2>}
+      {term.length > 0 ? <H2>Results</H2> : <H2>TV Series</H2>}
       <List state={tvSeries} />
     </Container>
   );

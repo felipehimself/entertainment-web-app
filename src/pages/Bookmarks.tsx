@@ -6,18 +6,13 @@ import { useGlobalContext } from '../store/context';
 
 const Bookmarks = () => {
   const { state, setTerm, term } = useGlobalContext();
-  const isVaforite = state.filter((item)=> item.isFavorite === true)
-
-  useEffect(()=> {
-    setTerm('')
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[])
+  const isVaforite = state.filter((item) => item.isFavorite === true);
 
   return (
     <Container>
-    {term.length > 0 ? <H2>Results</H2> : <H2>Favorites</H2>}
-    <List state={isVaforite} />
-  </Container>
-  )
-}
-export default Bookmarks
+      {term.length > 0 ? <H2>Results</H2> : <H2>Favorites</H2>}
+      <List state={isVaforite} />
+    </Container>
+  );
+};
+export default Bookmarks;

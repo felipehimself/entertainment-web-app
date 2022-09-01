@@ -5,8 +5,11 @@ import tvIcon from './../../assets/icons/icon-nav-tv-series.svg';
 import bookMark from './../../assets/icons/icon-nav-bookmark.svg';
 
 import * as Style from './styles';
+import { useGlobalContext } from '../../store/context';
 
 const Navbar = () => {
+  const { setTerm } = useGlobalContext();
+
   return (
     <Style.Nav>
       <Style.ImgLogo src={logo} alt='logo' />
@@ -18,6 +21,7 @@ const Navbar = () => {
               isActive ? 'list-item active' : 'list-item'
             }
             to='/'
+            onClick={()=>setTerm('')}
           >
             <Style.Icon className='icon' src={homeIcon} alt='' />
           </Style.Link>
@@ -28,6 +32,7 @@ const Navbar = () => {
               isActive ? 'list-item active' : 'list-item'
             }
             to='/movies'
+            onClick={()=>setTerm('')}
           >
             <Style.Icon className='icon' src={movieIcon} alt='' />
           </Style.Link>
@@ -38,6 +43,7 @@ const Navbar = () => {
               isActive ? 'list-item active' : 'list-item'
             }
             to='/tvshows'
+            onClick={()=>setTerm('')}
           >
             <Style.Icon className='icon' src={tvIcon} alt='' />
           </Style.Link>
@@ -48,6 +54,7 @@ const Navbar = () => {
               isActive ? 'list-item active' : 'list-item'
             }
             to='/bookmarks'
+            onClick={()=>setTerm('')}
           >
             <Style.Icon className='icon' src={bookMark} alt='' />
           </Style.Link>

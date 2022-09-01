@@ -6,13 +6,7 @@ import { useGlobalContext } from '../store/context';
 
 const Movies = () => {
   const { state, setTerm, term } = useGlobalContext();
-  const movies = state.filter((item)=> item.category === 'movie')
-  
-  useEffect(()=> {
-    setTerm('')
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[])
-
+  const movies = state.filter((item) => item.category === 'movie');
 
   return (
     <Container>

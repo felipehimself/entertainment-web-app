@@ -9,11 +9,6 @@ import Slider from '../components/slider/Slider';
 const Home = () => {
   const { state, setTerm, term } = useGlobalContext();
 
-  useEffect(() => {
-    setTerm('');
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-  console.log(state.length);
   return (
     <>
       <Container>{term.length === 0 && <H2>Trending</H2>}</Container>
